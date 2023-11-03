@@ -32,7 +32,7 @@ protected:
 private:
 
 	UPROPERTY()
-	TObjectPtr<UAuraUserWidget>  OverlayWidget;
+	TObjectPtr<UAuraUserWidget>  OverlayWidget;	
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<UAuraUserWidget> OverlayWidgetClass;

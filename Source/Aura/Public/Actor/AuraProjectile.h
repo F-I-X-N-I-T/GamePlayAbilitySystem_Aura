@@ -16,7 +16,7 @@ class AURA_API AAuraProjectile : public AActor
 {
 	GENERATED_BODY()
 	
-public:
+public:	
 	AAuraProjectile();
 
 	UPROPERTY(VisibleAnywhere)
@@ -35,7 +35,7 @@ private:
 
 	UPROPERTY(EditDefaultsOnly)
 	float LifeSpan = 15.f;
-	
+
 	bool bHit = false;
 	
 	UPROPERTY(VisibleAnywhere)

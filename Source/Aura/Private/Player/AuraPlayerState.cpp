@@ -21,7 +21,7 @@ AAuraPlayerState::AAuraPlayerState()
 void AAuraPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
+	
 	DOREPLIFETIME(AAuraPlayerState, Level);
 }
 

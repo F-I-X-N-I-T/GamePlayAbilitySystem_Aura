@@ -34,7 +34,7 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 	/*
 	 * Secondary Attributes
 	 */
-
+	
 	GameplayTags.Attributes_Secondary_Armor = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Attributes.Secondary.Armor"),
 		FString("Reduces damage taken, improves Block Chance")
@@ -88,7 +88,7 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 	/*
 	 * Input Tags
 	 */
-
+	
 	GameplayTags.InputTag_LMB = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.LMB"),
 		FString("Input Tag for Left Mouse Button")

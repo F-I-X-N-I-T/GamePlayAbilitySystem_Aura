@@ -3,7 +3,6 @@
 
 #include "AbilitySystem/AuraAbilitySystemLibrary.h"
 
-#include "AbilitySystemComponent.h"
 #include "Game/AuraGameModeBase.h"
 #include "Kismet/GameplayStatics.h"
 #include "UI/WidgetController/AuraWidgetController.h"

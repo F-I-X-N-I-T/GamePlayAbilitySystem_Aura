@@ -20,7 +20,7 @@ public:
 
 	/** Combat Interface */
 	virtual int32 GetPlayerLevel() override;
-	/** End Combat Interface */
+	/** end Combat Interface */
 	
 private:
 	virtual void InitAbilityActorInfo() override;
