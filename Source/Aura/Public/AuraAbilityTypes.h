@@ -1,5 +1,3 @@
-// Copyright FIXNIT GAMES
-
 #pragma once
 
 #include "GameplayEffectTypes.h"

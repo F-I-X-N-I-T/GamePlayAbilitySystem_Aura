@@ -1,4 +1,3 @@
-// Copyright FIXNIT GAMES
 
 #include "AuraAbilityTypes.h"
 
