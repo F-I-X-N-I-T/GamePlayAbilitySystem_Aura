@@ -25,14 +25,14 @@ public:
 	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
 
 	/** Combat Interface */
-	virtual UAnimMontage* GetHitReactMontage_Implementation() override;
-	virtual void Die() override;
+	virtual UAnimMontage* GetHitReactMontage_Implementation() override;	
+	virtual void Die() override;	
 	virtual FVector GetCombatSocketLocation_Implementation(const FGameplayTag& MontageTag) override;
 	virtual bool IsDead_Implementation() const override;
 	virtual AActor* GetAvatar_Implementation() override;
 	virtual TArray<FTaggedMontage> GetAttackMontages_Implementation() override;
-	/** End Combat Interface */
-	
+	/** end Combat Interface */
+
 	UFUNCTION(NetMulticast, Reliable)
 	virtual void MulticastHandleDeath();
 
@@ -55,7 +55,7 @@ protected:
 	FName RightHandSocketName;
 
 	bool bDead = false;
-	
+
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 

@@ -1,4 +1,4 @@
-// Copyright Druid Mechanics
+// Copyright FIXNIT GAMES
 
 
 #include "AbilitySystem/Abilities/AuraMeleeAttack.h"
