@@ -9,10 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2a0b4226-2742-4415-9ac2-dc0a689eae1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Enemies/Goblin/Animations/Slingshot/AM_HitReact_GoblinSlingshot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Enemies/Goblin/Animations/Slingshot/AM_HitReact_GoblinSlingshot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Enemies/Goblin/Animations/Slingshot/Running_Slingshot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Enemies/Goblin/Animations/Slingshot/Running_Slingshot.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Slingshot/BP_Goblin_Slingshot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Character/Goblin_Slingshot/BP_Goblin_Slingshot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Combat/NS_SlingshotImpact.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Combat/NS_SlingshotImpact.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Sounds/Enemies/Goblin/Death/sfx_Goblin_Death.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Sounds/Enemies/Goblin/Death/sfx_Goblin_Death.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/Enemy/Abilities/BP_SlingshotRock.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/Enemy/Abilities/BP_SlingshotRock.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Actor/AuraProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Actor/AuraProjectile.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -157,6 +158,9 @@
       <workItem from="1701120623179" duration="3490000" />
       <workItem from="1701207059961" duration="1174000" />
       <workItem from="1701283994397" duration="5056000" />
+      <workItem from="1701442896287" duration="2176000" />
+      <workItem from="1701449054503" duration="40000" />
+      <workItem from="1701449144339" duration="1009000" />
     </task>
     <servers />
   </component>
