@@ -9,11 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2a0b4226-2742-4415-9ac2-dc0a689eae1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Combat/NS_SlingshotImpact.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Combat/NS_SlingshotImpact.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Sounds/Enemies/Goblin/Death/sfx_Goblin_Death.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Sounds/Enemies/Goblin/Death/sfx_Goblin_Death.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/Enemy/Abilities/BP_SlingshotRock.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/Enemy/Abilities/BP_SlingshotRock.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Actor/AuraProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Actor/AuraProjectile.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +155,7 @@
       <workItem from="1701283994397" duration="5056000" />
       <workItem from="1701442896287" duration="2176000" />
       <workItem from="1701449054503" duration="40000" />
-      <workItem from="1701449144339" duration="1009000" />
+      <workItem from="1701449144339" duration="2067000" />
     </task>
     <servers />
   </component>
