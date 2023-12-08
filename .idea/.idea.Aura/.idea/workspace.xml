@@ -9,17 +9,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2a0b4226-2742-4415-9ac2-dc0a689eae1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Combat/NS_SlingshotImpact.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Combat/NS_SlingshotImpact.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fire_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fire_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fire_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fire_2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fire_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fire_3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fire_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fire_4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fireball.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireBolt/NS_Fireball.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireExplosion/NS_FireExplosion.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireExplosion/NS_FireExplosion.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireExplosion/NS_FireExplosion1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/Projectiles/FireExplosion/NS_FireExplosion1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/Enemy/Abilities/GA_RangedAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/AbilitySystem/Enemy/Abilities/GA_RangedAttack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/StartupMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/ExecCalc/ExecCalc_Damage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/ExecCalc/ExecCalc_Damage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Dungeon/SM_Corner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Dungeon/SM_Corner.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Dungeon/SM_Edge_2x2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Dungeon/SM_Edge_2x2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Dungeon/SM_Tile_3x2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Dungeon/SM_Tile_3x2.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "C++ Project.Aura.executor": "Debug",
+    "C++ Project.Aura.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -179,6 +171,9 @@
       <workItem from="1701900116097" duration="1974000" />
       <workItem from="1701902389757" duration="7200000" />
       <workItem from="1701966474792" duration="4690000" />
+      <workItem from="1701991230249" duration="326000" />
+      <workItem from="1702053534152" duration="577000" />
+      <workItem from="1702058722378" duration="1219000" />
     </task>
     <servers />
   </component>
