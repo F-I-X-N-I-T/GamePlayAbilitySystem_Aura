@@ -1,4 +1,4 @@
-// Copyright Druid Mechanics
+// Copyright FIXNIT GAMES
 
 #pragma once
 
@@ -18,7 +18,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	TArray<FVector> GetSpawnLocations();
 	
-	UFUNCTION(BlueprintPure, Category = "Summoning")
+	UFUNCTION(BlueprintPure, Category="Summoning")
 	TSubclassOf<APawn> GetRandomMinionClass();
 	
 	UPROPERTY(EditDefaultsOnly, Category = "Summoning")
@@ -35,5 +35,7 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Summoning")
 	float SpawnSpread = 90.f;
+
+
 	
 };

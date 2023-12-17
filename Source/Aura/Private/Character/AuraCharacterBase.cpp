@@ -123,7 +123,7 @@ int32 AAuraCharacterBase::GetMinionCount_Implementation()
 	return MinionCount;
 }
 
-void AAuraCharacterBase::IncrementMinionCount_Implementation(int32 Amount)
+void AAuraCharacterBase::IncremenetMinionCount_Implementation(int32 Amount)
 {
 	MinionCount += Amount;
 }
@@ -178,3 +178,4 @@ void AAuraCharacterBase::Dissolve()
 		StartWeaponDissolveTimeline(DynamicMatInst);
 	}
 }
+
