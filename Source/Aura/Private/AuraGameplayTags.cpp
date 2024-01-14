@@ -121,12 +121,12 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 
 	GameplayTags.InputTag_Passive_1 = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.Passive.1"),
-		FString("Input Tag for Passive Ability 1")
+		FString("Input Tag Passive Ability 1")
 		);
 
 	GameplayTags.InputTag_Passive_2 = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.Passive.2"),
-		FString("Input Tag for Passive Ability 2")
+		FString("Input Tag Passive Ability 2")
 		);
 
 	GameplayTags.Damage = UGameplayTagsManager::Get().AddNativeGameplayTag(
@@ -196,7 +196,6 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 		FName("Debuff.Stun"),
 		FString("Debuff for Lightning damage")
 		);
-	//
 
 	GameplayTags.Debuff_Chance = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Debuff.Chance"),
@@ -235,7 +234,6 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 	/*
 	 * Map of Damage Types to Debuffs
 	 */
-	
 	GameplayTags.DamageTypesToDebuffs.Add(GameplayTags.Damage_Arcane, GameplayTags.Debuff_Arcane);
 	GameplayTags.DamageTypesToDebuffs.Add(GameplayTags.Damage_Lightning, GameplayTags.Debuff_Stun);
 	GameplayTags.DamageTypesToDebuffs.Add(GameplayTags.Damage_Physical, GameplayTags.Debuff_Physical);
@@ -298,7 +296,7 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 		FName("Abilities.Status.Locked"),
 		FString("Locked Status")
 		);
-	
+
 	GameplayTags.Abilities_Status_Unlocked = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Abilities.Status.Unlocked"),
 		FString("Unlocked Status")
