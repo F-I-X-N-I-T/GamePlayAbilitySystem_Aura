@@ -64,7 +64,7 @@ bool FAuraGameplayEffectContext::NetSerialize(FArchive& Ar, UPackageMap* Map, bo
 		}
 	}
 
-	Ar.SerializeBits(&RepBits, 14); //The required bits are 14, but I am not sure that the original number is 9, but I put 14 to capture the last bool. since I was told it was 13 but I am in doubt.
+	Ar.SerializeBits(&RepBits, 14);
 
 	if (RepBits & (1 << 0))
 	{
