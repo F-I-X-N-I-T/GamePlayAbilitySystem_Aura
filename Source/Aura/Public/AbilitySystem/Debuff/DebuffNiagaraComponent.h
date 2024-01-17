@@ -22,8 +22,5 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-	void DebufffTagChanged(const FGameplayTag CallbackTag, int32 NewCount);
-
-	UFUNCTION()
-	void OnOwnerDeath(AActor* DeadActor);
+	void DebuffTagChanged(const FGameplayTag CallbackTag, int32 NewCount);
 };
