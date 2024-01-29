@@ -31,7 +31,7 @@ void UAuraBeamSpell::StoreOwnerVariables()
 
 void UAuraBeamSpell::TraceFirstTarget(const FVector& BeamTargetLocation)
 {
-	check (OwnerCharacter);
+	check(OwnerCharacter);
 	if (OwnerCharacter->Implements<UCombatInterface>())
 	{
 		if (USkeletalMeshComponent* Weapon = ICombatInterface::Execute_GetWeapon(OwnerCharacter))
@@ -46,7 +46,7 @@ void UAuraBeamSpell::TraceFirstTarget(const FVector& BeamTargetLocation)
 				BeamTargetLocation,
 				10.f,
 				TraceTypeQuery1,
-				false, 
+				false,
 				ActorsToIgnore,
 				EDrawDebugTrace::None,
 				HitResult,
@@ -75,9 +75,9 @@ void UAuraBeamSpell::StoreAdditionalTargets(TArray<AActor*>& OutAdditionalTarget
 		ActorsToIgnore,
 		850.f,
 		MouseHitActor->GetActorLocation());
-
+	
 	//int32 NumAdditionalTargets = FMath::Min(GetAbilityLevel() - 1, MaxNumShockTargets);
 	int32 NumAdditionTargets = 5;
-
+	
 	UAuraAbilitySystemLibrary::GetClosestTargets(NumAdditionTargets, OverlappingActors, OutAdditionalTargets, MouseHitActor->GetActorLocation());
 }

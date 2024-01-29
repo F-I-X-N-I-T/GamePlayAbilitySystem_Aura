@@ -257,9 +257,9 @@ void UAuraAbilitySystemComponent::ServerEquipAbility_Implementation(const FGamep
 		{
 			// Remove this InputTag (slot) from any Ability that has it.
 			ClearAbilitiesOfSlot(Slot);
-			// Clear this ability's slot, just in case, it's a different slot.
+			// Clear this ability's slot, just in case, it's a different slot
 			ClearSlot(AbilitySpec);
-			// Now, assign this ability to this slot.
+			// Now, assign this ability to this slot
 			AbilitySpec->DynamicAbilityTags.AddTag(Slot);
 			if (Status.MatchesTagExact(GameplayTags.Abilities_Status_Unlocked))
 			{
@@ -268,7 +268,7 @@ void UAuraAbilitySystemComponent::ServerEquipAbility_Implementation(const FGamep
 			}
 			MarkAbilitySpecDirty(*AbilitySpec);
 		}
-		ClientEquipAbility(AbilityTag,GameplayTags.Abilities_Status_Equipped, Slot, PrevSlot);
+		ClientEquipAbility(AbilityTag, GameplayTags.Abilities_Status_Equipped, Slot, PrevSlot);
 	}
 }
 
@@ -277,11 +277,11 @@ void UAuraAbilitySystemComponent::ClientEquipAbility(const FGameplayTag& Ability
 	AbilityEquipped.Broadcast(AbilityTag, Status, Slot, PreviousSlot);
 }
 
-bool UAuraAbilitySystemComponent::GetDescriptionsByAbilityTag(const FGameplayTag& AbilityTag, FString& OutDescription, FString& OutNextLevelDescription)
+bool UAuraAbilitySystemComponent::GetDescriptionsByAbilityTag(const FGameplayTag& AbilityTag, FString& OutDescription,FString& OutNextLevelDescription)
 {
 	if (const FGameplayAbilitySpec* AbilitySpec = GetSpecFromAbilityTag(AbilityTag))
 	{
-		if (UAuraGameplayAbility* AuraAbility = Cast<UAuraGameplayAbility>(AbilitySpec->Ability))
+		if(UAuraGameplayAbility* AuraAbility = Cast<UAuraGameplayAbility>(AbilitySpec->Ability))
 		{
 			OutDescription = AuraAbility->GetDescription(AbilitySpec->Level);
 			OutNextLevelDescription = AuraAbility->GetNextLevelDescription(AbilitySpec->Level + 1);

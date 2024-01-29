@@ -64,7 +64,7 @@ FString UAuraFireBolt::GetDescription(int32 Level)
 			ManaCost,
 			Cooldown,
 			FMath::Min(Level, NumProjectiles),
-			ScaledDamage);
+			ScaledDamage);		
 	}
 }
 
@@ -144,5 +144,5 @@ void UAuraFireBolt::SpawnProjectiles(const FVector& ProjectileTargetLocation, co
 		Projectile->ProjectileMovement->bIsHomingProjectile = bLaunchHomingProjectiles;
 		
 		Projectile->FinishSpawning(SpawnTransform);
-	} 
+	}
 }

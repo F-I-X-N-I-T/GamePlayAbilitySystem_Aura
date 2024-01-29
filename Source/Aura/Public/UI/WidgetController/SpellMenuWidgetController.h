@@ -69,3 +69,4 @@ private:
 	bool bWaitingForEquipSelection = false;
 	FGameplayTag SelectedSlot;
 };
+

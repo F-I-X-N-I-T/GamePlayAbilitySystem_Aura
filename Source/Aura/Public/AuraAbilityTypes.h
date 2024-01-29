@@ -1,7 +1,6 @@
 #pragma once
 
 #include "GameplayEffectTypes.h"
-
 #include "AuraAbilityTypes.generated.h"
 
 class UGameplayEffect;
@@ -45,13 +44,13 @@ struct FDamageEffectParams
 
 	UPROPERTY(BlueprintReadWrite)
 	float DebuffFrequency = 0.f;
-	
+
 	UPROPERTY(BlueprintReadWrite)
 	float DeathImpulseMagnitude = 0.f;
 
 	UPROPERTY(BlueprintReadWrite)
 	FVector DeathImpulse = FVector::ZeroVector;
-	
+
 	UPROPERTY(BlueprintReadWrite)
 	float KnockbackForceMagnitude = 0.f;
 

@@ -37,7 +37,6 @@ USpellMenuWidgetController* AAuraHUD::GetSpellMenuWidgetController(const FWidget
 		SpellMenuWidgetController = NewObject<USpellMenuWidgetController>(this, SpellMenuWidgetControllerClass);
 		SpellMenuWidgetController->SetWidgetControllerParams(WCParams);
 		SpellMenuWidgetController->BindCallbacksToDependencies();
-		
 	}
 	return SpellMenuWidgetController;
 }

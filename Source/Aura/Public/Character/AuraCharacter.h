@@ -14,7 +14,7 @@ class USpringArmComponent;
  * 
  */
 UCLASS()
-class AURA_API AAuraCharacter : public AAuraCharacterBase, public IPlayerInterface 
+class AURA_API AAuraCharacter : public AAuraCharacterBase, public IPlayerInterface
 {
 	GENERATED_BODY()
 public:
@@ -34,7 +34,7 @@ public:
 	virtual void AddToSpellPoints_Implementation(int32 InSpellPoints) override;
 	virtual int32 GetAttributePoints_Implementation() const override;
 	virtual int32 GetSpellPoints_Implementation() const override;
-	/** End Player Interface */
+	/** end Player Interface */
 
 	/** Combat Interface */
 	virtual int32 GetPlayerLevel_Implementation() override;

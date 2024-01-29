@@ -111,7 +111,7 @@ void USpellMenuWidgetController::GlobeDeselect()
 	SelectedAbility.Ability = FAuraGameplayTags::Get().Abilities_None;
 	SelectedAbility.Status = FAuraGameplayTags::Get().Abilities_Status_Locked;
 
-	SpellGlobeSelectedDelegate.Broadcast(false, false, FString(),FString());
+	SpellGlobeSelectedDelegate.Broadcast(false, false, FString(), FString());
 }
 
 void USpellMenuWidgetController::EquipButtonPressed()
@@ -131,7 +131,7 @@ void USpellMenuWidgetController::EquipButtonPressed()
 void USpellMenuWidgetController::SpellRowGlobePressed(const FGameplayTag& SlotTag, const FGameplayTag& AbilityType)
 {
 	if (!bWaitingForEquipSelection) return;
-	// Check selected ability against slot's ability type.
+	// Check selected ability against the slot's ability type.
 	// (don't equip an offensive spell in a passive slot and vice versa)
 	const FGameplayTag& SelectedAbilityType = AbilityInfo->FindAbilityInfoForTag(SelectedAbility.Ability).AbilityType;
 	if (!SelectedAbilityType.MatchesTagExact(AbilityType)) return;
@@ -143,7 +143,7 @@ void USpellMenuWidgetController::OnAbilityEquipped(const FGameplayTag& AbilityTa
 {
 	bWaitingForEquipSelection = false;
 
-	const FAuraGameplayTags GameplayTags = FAuraGameplayTags::Get();
+	const FAuraGameplayTags& GameplayTags = FAuraGameplayTags::Get();
 	
 	FAuraAbilityInfo LastSlotInfo;
 	LastSlotInfo.StatusTag = GameplayTags.Abilities_Status_Unlocked;

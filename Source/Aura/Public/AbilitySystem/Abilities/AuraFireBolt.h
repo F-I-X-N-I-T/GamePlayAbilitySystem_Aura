@@ -24,7 +24,7 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "FireBolt")
 	float ProjectileSpread = 90.f;
-	
+
 	UPROPERTY(EditDefaultsOnly, Category = "FireBolt")
 	int32 MaxNumProjectiles = 5;
 
