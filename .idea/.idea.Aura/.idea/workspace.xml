@@ -9,10 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a0b4226-2742-4415-9ac2-dc0a689eae1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aura/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aura/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/AuraAbilitySystemComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/AbilitySystem/AuraAbilitySystemComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Private/Character/AuraCharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Public/AbilitySystem/AuraAbilitySystemComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/AbilitySystem/AuraAbilitySystemComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/Aura/Public/Character/AuraCharacterBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Effects/ArcaneShards/NS_ArcaneShards.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Effects/ArcaneShards/NS_ArcaneShards.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "C++ Project.Aura.executor": "Debug",
+    "C++ Project.Aura.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -284,6 +281,8 @@
       <workItem from="1707174593881" duration="5208000" />
       <workItem from="1707181686611" duration="595000" />
       <workItem from="1707246989398" duration="4150000" />
+      <workItem from="1707674446912" duration="1938000" />
+      <workItem from="1707679135758" duration="4068000" />
     </task>
     <servers />
   </component>
