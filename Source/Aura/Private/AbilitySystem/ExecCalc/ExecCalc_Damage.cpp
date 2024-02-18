@@ -9,6 +9,7 @@
 #include "AbilitySystem/AuraAbilitySystemLibrary.h"
 #include "AbilitySystem/AuraAttributeSet.h"
 #include "AbilitySystem/Data/CharacterClassInfo.h"
+#include "Camera/CameraShakeSourceActor.h"
 #include "Interaction/CombatInterface.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -162,6 +163,10 @@ void UExecCalc_Damage::Execute_Implementation(const FGameplayEffectCustomExecuti
 		const FGameplayEffectAttributeCaptureDefinition CaptureDef = TagsToCaptureDefs[ResistanceTag];
 
 		float DamageTypeValue = Spec.GetSetByCallerMagnitude(Pair.Key, false);
+		if (DamageTypeValue <= 0.f)
+		{
+			continue;
+		}
 		
 		float Resistance = 0.f;
 		ExecutionParams.AttemptCalculateCapturedAttributeMagnitude(CaptureDef, EvaluationParameters, Resistance);
@@ -171,16 +176,16 @@ void UExecCalc_Damage::Execute_Implementation(const FGameplayEffectCustomExecuti
 
 		if (UAuraAbilitySystemLibrary::IsRadialDamage(EffectContextHandle))
 		{
-			// 1. Override TakeDamage in AuraCharacterBase. *
-			// 2. Create delegate OnDamageDelegate, Broadcast damage received in TakeDamage *
+			// 1. override TakeDamage in AuraCharacterBase. *
+			// 2. create delegate OnDamageDelegate, broadcast damage received in TakeDamage *
 			// 3. Bind lambda to OnDamageDelegate on the Victim here. *
 			// 4. Call UGameplayStatics::ApplyRadialDamageWithFalloff to cause damage (this will result in TakeDamage being called
-			//		on the Victim, which will then broadcast OnDamageDelegate) 
+			//		on the Victim, which will then broadcast OnDamageDelegate)
 			// 5. In Lambda, set DamageTypeValue to the damage received from the broadcast *
 
 			if (ICombatInterface* CombatInterface = Cast<ICombatInterface>(TargetAvatar))
 			{
-				CombatInterface->GetOnDamageSignature().AddLambda([&](float DamageAmount )
+				CombatInterface->GetOnDamageSignature().AddLambda([&](float DamageAmount)
 				{
 					DamageTypeValue = DamageAmount;
 				});
