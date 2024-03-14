@@ -275,7 +275,7 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 		FName("Abilities.Fire.FireBolt"),
 		FString("FireBolt Ability Tag")
 		);
-	
+
 	GameplayTags.Abilities_Fire_FireBlast = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Abilities.Fire.FireBlast"),
 		FString("FireBlast Ability Tag")
@@ -288,7 +288,7 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 
 	GameplayTags.Abilities_Arcane_ArcaneShards = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Abilities.Arcane.ArcaneShards"),
-		FString("ArcaneShards Ability Tag")
+		FString("Arcane Shards Ability Tag")
 		);
 
 	/*
@@ -307,8 +307,8 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 			FName("Abilities.Passive.HaloOfProtection"),
 			FString("Halo Of Protection")
 			);
-
 	
+
 	GameplayTags.Abilities_HitReact = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Abilities.HitReact"),
 		FString("Hit React Ability")

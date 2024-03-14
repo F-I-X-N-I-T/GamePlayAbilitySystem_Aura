@@ -64,7 +64,7 @@ FDamageEffectParams UAuraDamageGameplayAbility::MakeDamageEffectParamsFromClassD
 			Params.KnockbackForce = KnockbackRotation.Vector() * KnockbackForceMagnitude;
 		}
 	}
-	
+
 	if (bOverrideDeathImpulse)
 	{
 		DeathImpulseDirectionOverride.Normalize();

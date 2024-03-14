@@ -22,7 +22,7 @@ FString UAuraFireBlast::GetDescription(int32 Level)
 			// Cooldown
 			"<Small>Cooldown: </><Cooldown>%.1f</>\n\n"
 
-			//Number of Fire Bolts
+			// Number of Fire Balls
 			"<Default>Launches %d </>"
 			"<Default>fire balls in all directions, each coming back and </>"
 			"<Default>exploding upon return, causing </>"
@@ -46,7 +46,7 @@ FString UAuraFireBlast::GetNextLevelDescription(int32 Level)
 	const float Cooldown = GetCooldown(Level);
 	return FString::Printf(TEXT(
 			// Title
-			"<Title>NEXT LEVEL: </>\n\n"
+			"<Title>NEXT LEVEL:</>\n\n"
 
 			// Level
 			"<Small>Level: </><Level>%d</>\n"
@@ -55,7 +55,7 @@ FString UAuraFireBlast::GetNextLevelDescription(int32 Level)
 			// Cooldown
 			"<Small>Cooldown: </><Cooldown>%.1f</>\n\n"
 
-			//Number of Fire Bolts
+			// Number of Fire Balls
 			"<Default>Launches %d </>"
 			"<Default>fire balls in all directions, each coming back and </>"
 			"<Default>exploding upon return, causing </>"

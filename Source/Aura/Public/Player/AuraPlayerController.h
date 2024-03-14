@@ -35,7 +35,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void ShowMagicCircle(UMaterialInterface* DecalMaterial = nullptr);
-	
+
 	UFUNCTION(BlueprintCallable)
 	void HideMagicCircle();
 

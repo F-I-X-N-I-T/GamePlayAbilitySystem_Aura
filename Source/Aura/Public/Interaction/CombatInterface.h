@@ -65,7 +65,7 @@ public:
 
 	virtual void Die(const FVector& DeathImpulse) = 0;
 	virtual FOnDeathSignature& GetOnDeathDelegate() = 0;
-	virtual FOnDamageSignature& GetOnDamageSignature() = 0;
+	virtual FOnDamageSignature& GetOnDamageSignature() = 0; 
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	bool IsDead() const;

@@ -107,4 +107,3 @@ bool AAuraProjectile::IsValidOverlap(AActor* OtherActor)
 
 	return true;
 }
-

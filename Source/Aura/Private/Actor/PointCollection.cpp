@@ -34,7 +34,7 @@ APointCollection::APointCollection()
 	Pt_5 = CreateDefaultSubobject<USceneComponent>("Pt_5");
 	ImmutablePts.Add(Pt_5);
 	Pt_5->SetupAttachment(GetRootComponent());
-
+	
 	Pt_6 = CreateDefaultSubobject<USceneComponent>("Pt_6");
 	ImmutablePts.Add(Pt_6);
 	Pt_6->SetupAttachment(GetRootComponent());
@@ -60,7 +60,7 @@ APointCollection::APointCollection()
 
 TArray<USceneComponent*> APointCollection::GetGroundPoints(const FVector& GroundLocation, int32 NumPoints, float YawOverride)
 {
-	checkf(ImmutablePts.Num() >= NumPoints, TEXT("Attempted to access immutable points out of bounds."));
+	checkf(ImmutablePts.Num() >= NumPoints, TEXT("Attempted to access ImmutablePts out of bounds."));
 
 	TArray<USceneComponent*> ArrayCopy;
 
@@ -92,7 +92,7 @@ TArray<USceneComponent*> APointCollection::GetGroundPoints(const FVector& Ground
 
 		ArrayCopy.Add(Pt);
 	}
-	return ArrayCopy; 
+	return ArrayCopy;
 }
 
 void APointCollection::BeginPlay()

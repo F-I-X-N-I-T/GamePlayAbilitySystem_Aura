@@ -73,9 +73,9 @@ public:
 
 	UFUNCTION()
 	virtual void OnRep_Stunned();
-	
+
 	UFUNCTION()
-    virtual void OnRep_Burned();
+	virtual void OnRep_Burned();
 	
 protected:
 	virtual void BeginPlay() override;
@@ -155,7 +155,7 @@ protected:
 
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UDebuffNiagaraComponent> BurnDebuffComponent;
-	
+
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UDebuffNiagaraComponent> StunDebuffComponent;
 	
