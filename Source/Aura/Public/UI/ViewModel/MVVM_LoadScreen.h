@@ -27,7 +27,7 @@ public:
 	TSubclassOf<UMVVM_LoadSlot> LoadSlotViewModelClass;
 
 	UFUNCTION(BlueprintPure)
-	UMVVM_LoadSlot* GetLoadViewModelByIndex(int32 Index) const;
+	UMVVM_LoadSlot* GetLoadSlotViewModelByIndex(int32 Index) const;
 
 	UFUNCTION(BlueprintCallable)
 	void NewSlotButtonPressed(int32 Slot, const FString& EnteredName);
@@ -45,7 +45,7 @@ public:
 	void PlayButtonPressed();
 
 	void LoadData();
-
+	
 private:
 
 	UPROPERTY()

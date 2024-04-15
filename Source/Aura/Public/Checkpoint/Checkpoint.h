@@ -18,14 +18,14 @@ public:
 	ACheckpoint(const FObjectInitializer& ObjectInitializer);
 
 protected:
-	
+
 	UFUNCTION()
 	virtual void OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	virtual void BeginPlay() override;
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void CheckpointReached(UMaterialInstanceDynamic* DynamicMaterialInstance);
+	void CheckpointReached(UMaterialInstanceDynamic* DynamicMaterialInstance);\
 
 	void HandleGlowEffects();
 private:

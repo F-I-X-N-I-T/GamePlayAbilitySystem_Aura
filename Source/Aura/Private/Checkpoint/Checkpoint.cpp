@@ -10,7 +10,7 @@ ACheckpoint::ACheckpoint(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
 	PrimaryActorTick.bCanEverTick = false;
-
+	
 	CheckpointMesh = CreateDefaultSubobject<UStaticMeshComponent>("CheckpointMesh");
 	CheckpointMesh->SetupAttachment(GetRootComponent());
 	CheckpointMesh->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
@@ -42,7 +42,7 @@ void ACheckpoint::BeginPlay()
 void ACheckpoint::HandleGlowEffects()
 {
 	Sphere->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-	UMaterialInstanceDynamic* DynamicMaterialInstance = UMaterialInstanceDynamic::Create(CheckpointMesh->GetMaterial(0), this);
-	CheckpointMesh->SetMaterial(0, DynamicMaterialInstance);
-	CheckpointReached(DynamicMaterialInstance);
+	UMaterialInstanceDynamic* DynamicMaterialInstace = UMaterialInstanceDynamic::Create(CheckpointMesh->GetMaterial(0), this);
+	CheckpointMesh->SetMaterial(0, DynamicMaterialInstace);
+	CheckpointReached(DynamicMaterialInstace);
 }
