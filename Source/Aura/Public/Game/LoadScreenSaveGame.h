@@ -8,7 +8,6 @@
 #include "LoadScreenSaveGame.generated.h"
 
 class UGameplayAbility;
-
 UENUM(BlueprintType)
 enum ESaveSlotStatus
 {
@@ -40,6 +39,11 @@ struct FSavedAbility
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
 	int32 AbilityLevel;
 };
+
+inline bool operator==(const FSavedAbility& Left, const FSavedAbility& Right)
+{
+	return Left.AbilityTag.MatchesTagExact(Right.AbilityTag);
+}
 
 /**
  * 
@@ -96,7 +100,7 @@ public:
 
 	UPROPERTY()
 	float Vigor = 0;
-
+	
 	/* Abilities */
 
 	UPROPERTY()
