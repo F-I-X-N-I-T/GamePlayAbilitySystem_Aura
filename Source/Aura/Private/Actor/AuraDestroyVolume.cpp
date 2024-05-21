@@ -25,12 +25,17 @@ void AAuraDestroyVolume::LoadActor_Implementation()
 	if (bReached)
 	{
 		Destroy();
-		for (AAuraDestroyMesh* Destroy : DestroyMeshes)
+		DestroyMesh();
+	}
+}
+
+void AAuraDestroyVolume::DestroyMesh()
+{
+	for (AAuraDestroyMesh* Destroy : DestroyMeshes)
+	{
+		if (IsValid(Destroy))
 		{
-			if (IsValid(Destroy))
-			{
-				Destroy->DestroyMeshBlock();
-			}
+			Destroy->DestroyMeshBlock();
 		}
 	}
 }

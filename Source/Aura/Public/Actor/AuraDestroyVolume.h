@@ -22,6 +22,8 @@ public:
 	virtual void LoadActor_Implementation() override;
 	/* end Save Interface */
 
+	void DestroyMesh();
+
 	UPROPERTY(BlueprintReadOnly, SaveGame)
 	bool bReached = false;
 	
